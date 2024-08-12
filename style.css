@@ -89,8 +89,8 @@ header{
     border-radius: 10%;
 }
 .hero-img img:hover{
-    width: 550px;
-    opacity: 0.4;
+    width: 500px;
+    opacity: 0.6;
 }
 .hero-text a{
     display: inline-block;
@@ -176,6 +176,9 @@ section{
 }
 
 @media(max-width: 768px){
+    header{
+        background:linear-gradient(240.59deg, #3F4B59 25%, #47657f 50%, #47657f 100%);
+    }
     .menu-icon-action{
         display:block;
     }
