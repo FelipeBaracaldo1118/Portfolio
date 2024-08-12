@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace; 
+    list-style: none;
+    text-decoration: none;
+    color:#D9D9D9;
+}
+header{
+    position: fixed; /* El header quede fijo en la parte superior */
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex; /* se acomoden en linea (flex row ya que es por defecto) */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /*bordes inferiores y superiores, lateral */
+    background-color: transparent;
+}
+
+.logo{ 
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.navlist{
+    display:flex;
+}
+.navlist li{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .5 ease ;
+
+}
+.navlist li:hover{
+    color: hsla(80, 200, 70%, 20);
+    border-bottom: 2px solid whitesmoke;
+}
+#menu-icon{
+    display: none;
+    font-size: 40px;
+    z-index:11;
+    cursor: pointer;
+}
+#menu-toggle{
+    display:none;
+}
+.hero{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background:linear-gradient(240.59deg, #3F4B59 25%, #47657f 50%, #47657f 100%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.hero p{
+    font-size: 80%;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 3;
+}
+.hero-text h4{
+    font-size: 15px;
+    margin-bottom: 25px;
+    
+}
+.hero-text h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.hero-text h1{
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.hero-img img{
+    
+    width: 450px;
+    margin: 0 20% ;
+    height: auto;
+    transition: all 2s linear;
+    border-radius: 10%;
+}
+.hero-img img:hover{
+    width: 550px;
+    opacity: 0.4;
+}
+.hero-text a{
+    display: inline-block;
+    border: 2px solid #2e343b;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 1s ;
+}
+.hero-text a:hover{
+    background-color: #2c2d30;
+    color:whitesmoke;
+    transform: translateX(5px);
+}
+
+.hero-text a.proyectos{
+    margin-left: 10px;
+}
+.redes{
+    position: absolute;
+    left: 0;
+    top:50vh;
+    font-size: 30px;
+    padding: 0  3%;
+    transform: translateY(-60%);
+}
+.redes i{
+    display:block;
+    margin:20px 0;
+    transition: all .5s ease-in ;
+}
+
+.redes i:hover{
+    opacity: 0.5;
+}
+section{
+    padding: 0  10%;
+    text-align: justify;
+}
+
+.scroll-down{
+    position: absolute;
+    right: 3%;
+    bottom: 6%;
+    background-color: whitesmoke;
+    border: #3F4B59;
+    opacity: 0.5;
+    font-size: 50px;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.scroll-down i{
+    color: #3F4B59;
+}
+
+
+
+@media(max-width:992px){
+    section{
+        padding: 0 3%;
+        transition: .2s
+    }
+    .hero-text{
+        padding-top:0;
+    }
+    .hero-img{
+        text-align:center;
+    }
+    .hero-img img{
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+    .hero-text p{
+        font-size:70%;
+    }
+    .redes {
+        display: none;
+    }
+    .scroll-down{
+        display:none;
+    }
+}
+
+@media(max-width: 768px){
+    .menu-icon-action{
+        display:block;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        right: -100%;
+        top:100%;
+        max-width: 768px;
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(145.59deg, #3F4B59 25%, #47657f 50%, #47657f 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        transition: all .5s ease-out;
+       
+    }
+    .navlist a{
+        display: block;
+        margin: 7px 0;
+        
+    }
+    .navlist li{
+        border-bottom: solid 2px #9eb4c8;
+
+    }
+    #menu-toggle:checked+ label.menu-icon-action + ul{
+        right: 0;
+    }
+
+    .hero-text{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .hero-img img{
+        margin: 0;
+
+    }
+    
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
