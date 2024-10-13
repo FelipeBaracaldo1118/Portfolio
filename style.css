@@ -87,7 +87,7 @@ header{
     margin: 0 20% ;
     height: auto;
     transition: all 2s linear;
-    border-radius: 10%;
+    border-radius: 1.5rem;
     
 }
 .hero-img img:hover{
