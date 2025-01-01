@@ -38,7 +38,7 @@ header{
 }
 .navlist li:hover{
     color: hsla(80, 200, 70%, 20);
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 2px solid #50F296;
 }
 #menu-icon{
     display: none;
@@ -61,13 +61,13 @@ header{
     gap: 2rem;
 }
 .hero p{
-    font-size: 80%;
+    font-size: 100%;
     font-weight: 600;
     margin-bottom: 25px;
     line-height: 3;
 }
 .hero-text h4{
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 25px;
     
 }
