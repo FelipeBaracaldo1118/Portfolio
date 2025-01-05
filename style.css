@@ -110,14 +110,13 @@ header{
     margin: 0 20% ;
     height: auto;
     transition: all .5s linear;
-    border-radius: 2rem;
     box-shadow: 0px 2px 6px  #62a981;
 }
 
 .hero-text a{
     display: inline-block;
     border: 2px solid #2e343b;
-    border-radius: 10px;
+    border-radius: 5em;
     padding: 15px 30px;
     font-size: 15px;
     font-weight: 600;
@@ -163,13 +162,17 @@ section{
     transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     
 }
+section .certificados{
 
+    margin-bottom: 2rem;
+}
 .certificados{
     display: flex;
-    height: 80vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 2em;
 }
 .card{
     height: 50%;
@@ -178,8 +181,7 @@ section{
     margin: 2em 2em;
     max-width: 100%;
     border-radius: 2em;  
-    box-shadow: 1px 1px 2px 2px #4d715d;
-    
+    box-shadow: 1px 1px 2px 2px;
 }
 .card h3, h6, p{
     padding-top: 1em;
@@ -187,10 +189,10 @@ section{
 
 
 .card a{
-    color: #48D995 ;
+    color: #F27405 ;
 }
 .card a:hover{
-    color: #bfd8ef;
+    color: #4d715d;
 }
 
 @media(max-width:992px){
