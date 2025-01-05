@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     color:#D9D9D9;
+    background-color: #060D0C;
 }
 header{
     position: fixed; /* El header quede fijo en la parte superior */
@@ -18,15 +19,36 @@ header{
     align-items: center;
     padding: 15px 20px; /*bordes inferiores y superiores, lateral */
     background-color: transparent;
-    backdrop-filter: blur (20px);
-    margin-top:.5px;
-    
-   
+    margin-top:.10px;
 }   
-
+#open {
+    height: inherit;
+    width: inherit;
+    border: 1px solid #0000;
+    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
+          var(--angle),
+          #070707,
+          #48D995
+        ) border-box;
+    animation: 5s rotate linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
 
 .navlist{
     display:flex;
+    border-radius: 2em;
+    /*agregar animacion que cuando se haga scroll el menu tenga un color diferente, y a su vez se vea redondo*/
 }
 .navlist li{
     margin: 20px;
@@ -38,7 +60,7 @@ header{
 }
 .navlist li:hover{
     color: hsla(80, 200, 70%, 20);
-    border-bottom: 2px solid #50F296;
+    border-bottom: 2px solid #62a981;
 }
 #menu-icon{
     display: none;
@@ -87,10 +109,9 @@ header{
     width: 450px;
     margin: 0 20% ;
     height: auto;
-    transition: all 2s linear;
+    transition: all .5s linear;
     border-radius: 2rem;
-    border: solid 4px #025940;
-    
+    box-shadow: 0px 2px 6px  #62a981;
 }
 
 .hero-text a{
@@ -103,18 +124,16 @@ header{
     transition: all .3s ease ;
 }
 .hero-text a:hover{
-    background-color: #48D995;
+    background-color: #58a882;
     color:whitesmoke;
     transform: translateX(2px);
 }
 
-.hero-text a.proyectos{
-    margin-left: 10px;
-}
+
 .redes{
     position: absolute;
     left: 0;
-    top:50vh;
+    top:40vh;
     font-size: 30px;
     padding: 0  3%;
     transform: translateY(-60%);
@@ -144,11 +163,35 @@ section{
     transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     
 }
-.scroll-down i{
-    color: #3F4B59;
+
+.certificados{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    height: 50%;
+    width: 30%;
+    padding: 2em 2em;
+    margin: 2em 2em;
+    max-width: 100%;
+    border-radius: 2em;  
+    box-shadow: 1px 1px 2px 2px #4d715d;
+    
+}
+.card h3, h6, p{
+    padding-top: 1em;
 }
 
 
+.card a{
+    color: #48D995 ;
+}
+.card a:hover{
+    color: #bfd8ef;
+}
 
 @media(max-width:992px){
     section{
@@ -183,9 +226,11 @@ section{
     }
     .menu-icon-action{
         display:block;
+        right: 100px;
     }
     #menu-icon{
         display: block;
+
     }
     .navlist{
         position: absolute;
