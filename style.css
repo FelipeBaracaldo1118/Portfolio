@@ -17,7 +17,8 @@ header{
     justify-content:center;
     align-items: center;
     padding: 15px 20px; /*bordes inferiores y superiores, lateral */
-    background-color: #2e343b;
+    background-color: transparent;
+    backdrop-filter: blur (20px);
     margin-top:.5px;
     
    
