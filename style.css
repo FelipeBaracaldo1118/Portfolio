@@ -21,29 +21,7 @@ header{
     background-color: transparent;
     margin-top:.10px;
 }   
-#open {
-    height: inherit;
-    width: inherit;
-    border: 1px solid #0000;
-    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
-          var(--angle),
-          #070707,
-          #48D995
-        ) border-box;
-    animation: 5s rotate linear infinite;
-  }
-  
-  @keyframes rotate {
-    to {
-      --angle: 360deg;
-    }
-  }
-  
-  @property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
+
 
 .navlist{
     display:flex;
@@ -151,6 +129,30 @@ section{
     text-align: justify;
 }
 
+#open {
+    height: inherit;
+    width: inherit;
+    border: 1px solid #0000;
+    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
+          var(--angle),
+          #070707,
+          #48D995
+        ) border-box;
+    animation: 5s rotate linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
 .scroll-down{
     position: absolute;
     right: 3%;
@@ -162,10 +164,7 @@ section{
     transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     
 }
-section .certificados{
 
-    margin-bottom: 2rem;
-}
 .certificados{
     display: flex;
     height: auto;
@@ -183,7 +182,7 @@ section .certificados{
     border-radius: 2em;  
     box-shadow: 1px 1px 2px 2px;
 }
-.card h3, h6, p{
+.card h2, h6, p{
     padding-top: 1em;
 }
 
