@@ -130,6 +130,7 @@ section{
 }
 
 #open {
+    margin-top: 10px;
     height: inherit;
     width: inherit;
     border: 1px solid #0000;
