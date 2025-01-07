@@ -19,7 +19,7 @@ header{
     align-items: center;
     padding: 15px 20px; /*bordes inferiores y superiores, lateral */
     background-color: transparent;
-    margin-top:.10px;
+    margin-top:5px;
 }   
 
 
@@ -30,10 +30,11 @@ header{
 }
 .navlist li{
     margin: 20px;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .5 ease ;
+    text-transform: uppercase;
 
 }
 .navlist li:hover{
@@ -165,18 +166,25 @@ section{
     transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     
 }
-
+.certificados h2{
+    text-align: center;
+    width: 100%;
+    font-size:2em;
+    margin-bottom: 10px;
+}
 .certificados{
     display: flex;
-    height: auto;
+    height: 100%;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 2em;
+    
 }
 .card{
-    height: 50%;
-    width: 30%;
+    height: auto;
+    width: 40%;
     padding: 2em 2em;
     margin: 2em 2em;
     max-width: 100%;
@@ -189,10 +197,10 @@ section{
 
 
 .card a{
-    color: #F27405 ;
+    color: #f29705 ;
 }
 .card a:hover{
-    color: #4d715d;
+    color: #99f1c1;
 }
 
 @media(max-width:992px){
@@ -219,6 +227,10 @@ section{
     .scroll-down{
         display:none;
     }
+   .certificados .card{
+    height: 100%;
+    width: auto;
+   }
     
 }
 
@@ -279,4 +291,18 @@ section{
         gap: 1rem;
         grid-template-columns: 1fr;
     }
+    .certificados{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .certificados h2{
+        margin-top: 20px;
+    }
+
+    .card{
+        min-height: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
 }
