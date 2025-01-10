@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace; 
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
     list-style: none;
     text-decoration: none;
-    color:#D9D9D9;
-    background-color: #495169;
+    color:#2e2d2d;
+    background-color: #f2e9e4;
 }
 header{
     position: fixed; /* El header quede fijo en la parte superior */
@@ -54,7 +55,7 @@ header{
     height: 100%;
     min-height: 100vh;
     width: 100%;
-    background:#495169;
+    background:#f2e9e4;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,6 +91,7 @@ header{
     height: auto;
     transition: all .5s linear;
     box-shadow: 0px 2px 6px  #62a981;
+    border-radius: 15px;
 }
 
 .hero-text a{
@@ -102,8 +104,8 @@ header{
     transition: all .3s ease ;
 }
 .hero-text a:hover{
-    background-color: #58a882;
-    color:whitesmoke;
+    background-color: #6c6b6a64;
+    color:#3F4B59;
     transform: translateX(2px);
 }
 
@@ -135,7 +137,7 @@ section{
     height: inherit;
     width: inherit;
     border: 1px solid #0000;
-    background: linear-gradient(#495169, #495169) padding-box, linear-gradient(
+    background: linear-gradient(#f2e9e4, #f2e9e4) padding-box, linear-gradient(
           var(--angle),
           #070707,
           #48D995
@@ -195,7 +197,13 @@ section{
 .card h2, h6, p{
     padding-top: 1em;
 }
-
+.card p{
+    font-size: 120%;
+}
+.card img{
+    width: 100%;
+    max-width: fit-content;
+}
 
 .card a{
     color: #f29705 ;
@@ -237,7 +245,9 @@ section{
 
 @media(max-width: 768px){
     header{
-        background:#495169;
+        background:#f2e9e4;
+        position: fixed;
+        top: -1px;
     }
     .menu-icon-action{
         display:block;
@@ -270,6 +280,7 @@ section{
 
     .navlist.open{
         right: 0;
+        background-color: #f2e9e4;
     }
     .navlist li{
         border-bottom: solid 2px #9eb4c8;
