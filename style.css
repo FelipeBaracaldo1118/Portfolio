@@ -399,8 +399,8 @@ section{
   }
   
   .skills-toggle.active::before {
-    left: 98px;
-    width: 94px;
+    left: 50%;
+    width: 50%;
   }
   
   .toggle-btn {
@@ -457,6 +457,7 @@ section{
     width: 100%;
     max-width: 200px;
   }
+  
   
   
   /*-----------------------------------*\
@@ -750,21 +751,42 @@ section{
 
   
   
-    /**
-     * SKILLS
-     */
-  
-    .skills {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 50px;
-    }
-  
-    .skills-content { margin-bottom: 0; }
-  
-    .skills-toggle { margin-inline: 0; }
-  
+ /**
+   * SKILLS
+   */
+
+   .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    margin: 5% 10%;
+    height: 50vh;
+    max-height: 100vh;
+  }
+  .skills-content { margin-bottom: 50px; text-align: start; }
+
+  .skills-content { margin-bottom: 0; }
+
+  .skills-toggle { margin-inline: 0; }
+
+  .section-content {
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .skills .section-subtitle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(0.75turn) translateX(-100%);
+    transform-origin: left top;
+    margin-bottom: 0;
+}
+.skills .redes{
+    top: 25vh;
+}
+
   
   
     /**
