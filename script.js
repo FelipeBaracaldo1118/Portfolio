@@ -24,8 +24,8 @@ sr.reveal('.hero-text', {delay: 200, origin: 'top'})
 sr.reveal('.hero-img', {delay: 450, origin: 'top'})
 sr.reveal('.redes', {delay: 300, origin: 'left'})
 sr.reveal('.ri-arrow-down-double-line', {delay: 450, origin: 'right'})
-sr.reveal('.certificados', {delay: 300, origin: 'top'})
-
+sr.reveal('.project', {delay: 100, origin: 'left'})
+sr.reveal('.skills', {delay: 100, origin: 'rigth'})
 /**
  * skills toggle
  */
