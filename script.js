@@ -26,6 +26,7 @@ sr.reveal('.redes', {delay: 300, origin: 'left'})
 sr.reveal('.ri-arrow-down-double-line', {delay: 450, origin: 'right'})
 sr.reveal('.project', {delay: 100, origin: 'left'})
 sr.reveal('.skills', {delay: 100, origin: 'rigth'})
+sr.reveal('.project-list', {delay: 50, origin:'top'})
 /**
  * skills toggle
  */
