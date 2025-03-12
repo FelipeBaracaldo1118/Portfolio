@@ -26,10 +26,10 @@ import projectImage6 from "./assets/projects/project6.jpg";
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Felipe Baracaldo",
+  tagline: "Trato de crear soluciones web para usuarios finales",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `Estudiante actual de Ingenieria de Sistemas con enfasis en Desarrollo Web, siempre dispuesto a aprender nuevas tecnologias y adaptarme a los equipos de trabajo`,
 };
 
 // Enter your Social Media URLs here
