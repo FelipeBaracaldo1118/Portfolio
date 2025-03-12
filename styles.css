@@ -58,14 +58,18 @@ body {
 .hero h1 {
     font-size: 5rem;
     font-weight: bold;
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
+    line-height: 1.1;
 }
 
 .hero h1 span {
     font-size: 5rem;
     color: #fff;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: -10px;
 }
 
 .hero p {
@@ -79,44 +83,48 @@ body {
 .hero-actions {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 20px;
 }
 
-/* Botón Projects */
-.btn-projects {
+/* Botones */
+.btn-primary, .btn-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    color: #121212;
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 14px 30px;
+    padding: 12px 30px;
     border-radius: 40px;
     text-decoration: none;
     transition: 0.3s;
-    min-width: 180px;
-    gap: 10px;
+    min-width: 200px;
 }
 
-.btn-projects .arrow {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease-in-out;
+.btn-primary {
+    background: #fff;
+    color: #121212;
 }
 
-/* Efecto Hover */
-.btn-projects:hover {
+.btn-primary:hover {
     background: #ccc;
 }
 
-.btn-projects:hover .arrow {
-    transform: translateX(5px);
+.btn-secondary {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
 }
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 /* Redes Sociales */
 .social-links {
     display: flex;
     gap: 10px;
+    margin-top: 15px;
 }
 
 .btn-icon {
@@ -156,98 +164,185 @@ body {
     object-fit: cover;
 }
 
-/* ===== Skills Section ===== */
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+/* ===== Skills Section con Barras de Progreso ===== */
+.skills {
+    max-width: 800px;
+    margin: 40px auto;
 }
 
-.skill-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
+.skills h3 {
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
-.skill-card.highlight {
-    background: rgba(255, 255, 255, 0.2);
+.skill-item {
+    margin-bottom: 15px;
 }
 
-.skill-card:hover {
-    transform: scale(1.05);
+.skill-item span {
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-/* ===== Work Experience ===== */
+.skill-bar {
+    background: #333;
+    border-radius: 10px;
+    height: 8px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.level {
+    background: #4CAF50;
+    height: 100%;
+}
+
+/* ===== Work Experience (Alineación Centrada) ===== */
 .work {
-    margin-top: 60px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: left;
 }
 
+/* Línea de tiempo */
 .work-timeline {
     display: flex;
     flex-direction: column;
+    position: relative;
     border-left: 2px solid rgba(255, 255, 255, 0.2);
+    padding-left: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+/* Estilos de cada trabajo */
 .job {
+    position: relative;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.job h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job span {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.job p {
+    margin-top: 5px;
+    color: #bbb;
+}
+
+/* Puntos en la línea de tiempo */
+.job::before {
+    content: "●";
+    color: #4CAF50;
+    font-size: 1.3rem;
+    position: absolute;
+    left: -35px;
+    top: 18px;
+}
+
+
+/* ===== Projects Section ===== */
+.projects {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
-    gap: 20px;
 }
 
-.job.active {
-    background-color: rgba(255, 255, 255, 0.1);
+/* Imagen del proyecto */
+.project-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
 }
 
-/* ===== Responsive Design ===== */
-@media (max-width: 900px) {
-    .hero {
+/* Contenedor de los botones */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Botones de los proyectos */
+.project-buttons .btn-primary,
+.project-buttons .btn-secondary {
+    flex: 1;
+    max-width: 160px;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilización del formulario */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact input, .contact textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.contact button {
+    background: #4CAF50;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.contact button:hover {
+    background: #388E3C;
+}
+
+/* ===== Responsive Design para móviles ===== */
+@media (max-width: 768px) {
+    .hero, .about-container {
         flex-direction: column;
         text-align: center;
         gap: 30px;
     }
 
-    .hero-content {
-        max-width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 4rem;
-    }
-
-    .hero-actions {
+    .project-buttons {
+        flex-direction: column;
         align-items: center;
     }
-
-    .social-links {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .profile-pic img {
-        width: 200px;
-    }
-}
-
-/* ===== Animaciones con ScrollReveal ===== */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
 }

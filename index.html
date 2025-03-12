@@ -16,11 +16,14 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-   <!-- Hero Section -->
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
         <h1><span>Jr</span> Developer</h1>
@@ -31,71 +34,95 @@
     </div>
 
     <div class="hero-actions">
-        <!-- Botón Projects -->
-        <a href="#projects" class="btn-projects">
-            <span>Projects</span> <span class="arrow">→</span>
-        </a>
+        <a href="#projects" class="btn-primary">Proyectos →</a>
+        <a href="CV_Sebastian_Baracaldo.pdf" download class="btn-secondary">Descargar CV</a>
 
         <!-- Social Media Links -->
         <div class="social-links">
-            <a href="#" class="btn-icon">Github</a>
-            <a href="#" class="btn-icon">LinkedIn</a>
+            <a href="https://github.com/FelipeBaracaldo1118" class="btn-icon">Github</a>
+            <a href="https://www.linkedin.com/in/sebastian-felipe-baracaldo-amado-0a062b181" class="btn-icon">LinkedIn</a>
         </div>
     </div>
 </section>
+
+
     <!-- About Me -->
     <section id="about" class="about">
         <div class="about-container">
-            <!-- Texto a la izquierda -->
             <div class="about-text">
                 <h3>.../About me...</h3>
-                <p>Hola, soy <strong>Sebastián F. Baracaldo</strong>, un <em>Jr FrontEnd Developer en desarollo</em>.</p>
-                <p>Más de <strong>2 años </strong> de experiencia en desarrollo web y Soporte IT.</p>
+                <p>Hola, soy <strong>Sebastián F. Baracaldo</strong>, un <em>Jr FrontEnd Developer en desarrollo</em>.</p>
+                <p>Más de <strong>2 años </strong> de experiencia en desarrollo web y soporte IT.</p>
             </div>
-
-            <!-- Imagen de perfil -->
             <div class="profile-pic">
                 <img src="IMG_8219.jpeg" alt="Profile Picture">
             </div>
         </div>
 
-        <!-- Tarjetas de habilidades -->
-        <div class="skills-grid">
-            <div class="skill-card highlight">
-                <h3>Front-end</h3>
-                <p>HTML / CSS / JavaScript / React.js / Vue.js </p>
+        <!-- Skills Section -->
+        <div class="skills">
+            <h3>Technical Skills</h3>
+            <div class="skill-item">
+                <span>CSS</span> <div class="skill-bar"><div class="level" style="width: 80%;"></div></div>
             </div>
-            <div class="skill-card">
-                <h3>Back-end</h3>
-                <p>PHP / MySQL / Node.js /p>
+            <div class="skill-item">
+                <span>JavaScript</span> <div class="skill-bar"><div class="level" style="width: 85%;"></div></div>
             </div>
-            <div class="skill-card">
-                <h3>Herramientas</h3>
-                <p>VsCode / Postman/ Git / GitHub</p>
+            <div class="skill-item">
+                <span>PHP</span> <div class="skill-bar"><div class="level" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <span>HTML</span> <div class="skill-bar"><div class="level" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <span>REACT.JS</span> <div class="skill-bar"><div class="level" style="width: 50%;"></div></div>
             </div>
         </div>
     </section>
 
     <!-- Work Experience -->
     <section id="work" class="work">
-        <h2>Work</h2>
+        <h2>Work Experience</h2>
         <div class="work-timeline">
             <div class="job">
-                <span class="date">2023 - Present</span>
-                <span class="company">Fast International Cargo</span>
-                <span class="role">Frontend Developer | HTML, CSS, JAVASCRIPT</span>
+                <h4>Frontend Developer | Fast International Cargo</h4>
+                <span>2023 - Present</span>
+                <p>Desarrollo y mantenimiento de aplicaciones web con HTML, CSS y JavaScript.</p>
             </div>
             <div class="job active">
-                <span class="date">2023 - Present</span>
-                <span class="company">Ceser S.A.S.</span>
-                <span class="role">Fullstack Developer | PHP, SQL, HTML, CSS, JAVASCRIPT</span>
+                <h4>Fullstack Developer | Ceser S.A.S.</h4>
+                <span>2023 - Present</span>
+                <p>Desarrollo backend con PHP y MySQL, diseño frontend con HTML, CSS y JavaScript.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="Screenshot 2025-03-12 at 5.17.53 PM.png" alt="Project Screenshot">
+            <h4>Portafolio Especialista en Marketing</h4>
+            <p>Portafolio para una especialista en Marketing, en Ingles y español.</p>
+            <div class="project-buttons">
+                <a href="https://portafolio-profesional-camila-ibanez.netlify.app/" class="btn-primary">Proyecto</a>
+                <a href="https://github.com/FelipeBaracaldo1118/Cami-Portfolio" class="btn-secondary">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
     </section>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
-
