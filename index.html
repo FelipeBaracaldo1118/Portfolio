@@ -1,128 +1,770 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sebastián F. Baracaldo | Full-stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Baracaldo Personal Portofolio</title>
+
+  <!--
+    - favicon
+  -->
+  
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Sebastián F. Baracaldo</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!--
+    - #MAIN
+  -->
 
-    <!-- Hero Section -->
-    <!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1><span>Jr</span> Developer</h1>
-        <p>Mi meta es convertirme en un gran ingeniero 
-            <em>brindando soluciones estables, escalables y mantenibles</em> 
-            para <em>ayudar a personas y empresas</em> a mejorar procesos y tener presencia digital.
-        </p>
-    </div>
+  <main>
 
-    <div class="hero-actions">
-        <a href="#projects" class="btn-primary">Proyectos →</a>
-        <a href="CV_Sebastian_Baracaldo.pdf" download class="btn-secondary">Descargar CV</a>
+    <!--
+      - #SIDEBAR
+    -->
 
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://github.com/FelipeBaracaldo1118" class="btn-icon">Github</a>
-            <a href="https://www.linkedin.com/in/sebastian-felipe-baracaldo-amado-0a062b181" class="btn-icon">LinkedIn</a>
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/IMG_8219.jpeg" alt="Felipe Baracaldo" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Felipe Baracaldo</h1>
+
+          <p class="title">Jr Web Developer</p>
         </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:felipe.baracaldo1118@icloud.com" class="contact-link">felipe.baracaldo1118@icloud.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Whatsapp</p>
+
+              <a href="https://wa.link/5qdrk0" class="contact-link">Contactame aqui</a>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ubicacion</p>
+
+              <address>Bogota, Col</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+      
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mí</h2>
+        </header>
+      
+        <section class="about-text">
+          <p>
+            Soy <strong>Sebastián Baracaldo</strong>, Junior Web Developer con un enfoque claro en la creación de interfaces modernas, limpias y funcionales. Disfruto transformar ideas en productos digitales atractivos y usables, combinando creatividad con código.
+          </p>
+      
+          <p>
+            Tengo experiencia práctica en HTML, CSS, JavaScript, PHP, Node.JS y un poco de Python. Conocimientos sólidos de React.js. He participado en el desarrollo fullstack de aplicaciones reales, colaborando con equipos técnicos y de diseño, implementando buenas prácticas y asegurando un rendimiento óptimo.
+          </p>
+      
+          <p>
+            Me considero una persona autodidacta, comprometida y con gran atención al detalle. Estoy en constante aprendizaje, actualmente cursando la certificación <strong>Meta Front-End Developer</strong> en Coursera, mientras aplico mis habilidades en proyectos profesionales.
+          </p>
+      
+          <p>
+            Busco oportunidades donde pueda seguir creciendo, aportar valor y enfrentar nuevos retos en el mundo del desarrollo web.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+        <section class="service">
+
+          <h3 class="h3 service-title">Lo que hago</h3>
+        
+          <ul class="service-list">
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Icono desarrollo web" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollo Frontend</h4>
+                <p class="service-item-text">
+                  Desarrollo de interfaces web responsivas, optimizadas y accesibles usando HTML, CSS, JavaScript y React.js.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Icono backend" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Integración Backend</h4>
+                <p class="service-item-text">
+                  Manejo de lógica de servidor con PHP y Node.js. Integración de APIs REST y bases de datos MySQL/PostgreSQL.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Icono UI/UX" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Diseño UI/UX</h4>
+                <p class="service-item-text">
+                  Diseño de experiencias centradas en el usuario. Aplicación de buenas prácticas de accesibilidad y usabilidad.
+                </p>
+              </div>
+            </li>
+        
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Icono performance" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Optimización de rendimiento</h4>
+                <p class="service-item-text">
+                  Implementación de técnicas como lazy loading, minificación y compresión para mejorar velocidad de carga.
+                </p>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+        
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+      
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resumen</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Educación</h3>
+          </div>
+        
+          <ol class="timeline-list">
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Universidad Católica de Colombia</h4>
+              <span>2021 — Presente</span>
+              <p class="timeline-text">
+                Ingeniería de Sistemas. Formación en algoritmos, estructuras de datos y desarrollo de software escalable.
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Meta Front-End Developer - Coursera</h4>
+              <span>2025 (En curso)</span>
+              <p class="timeline-text">
+                Certificación profesional de Meta para desarrolladores Front-End. Incluye fundamentos de HTML, CSS, JavaScript, React, diseño responsivo y pruebas.
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Code Academy</h4>
+              <span>2024</span>
+              <p class="timeline-text">
+                Carrera de Desarrollo Frontend. Especialización práctica en HTML, CSS, JavaScript y React.js.
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Digital House</h4>
+              <span>2024</span>
+              <p class="timeline-text">
+                Certificado en Diseño Web. Conocimientos en maquetación, diseño de interfaces UI/UX y buenas prácticas frontend.
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Colegio Nueva York</h4>
+              <span>2005 — 2016</span>
+              <p class="timeline-text">
+                Bachiller Académico. Formación en ciencias, matemáticas e idiomas. Nivel de inglés B2 certificado.
+              </p>
+            </li>
+        
+          </ol>
+        
+        </section>
+
+
+        <section class="timeline">
+
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="briefcase-outline"></ion-icon>
     </div>
+    <h3 class="h3">Experiencia Profesional</h3>
+  </div>
+
+  <ol class="timeline-list">
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Desarrollador Fullstack – Fast International Cargo</h4>
+      <span>Enero 2023 — Presente</span>
+      <p class="timeline-text">
+        Desarrollo y mantenimiento de interfaces web internas utilizando <strong>HTML, CSS, JAVASCRIPT</strong> con enfoque en usabilidad, diseño responsive y rendimiento.
+        Creación de componentes reutilizables con hooks personalizados, reduciendo la duplicación de código y mejorando la mantenibilidad del proyecto.
+        Optimización de carga inicial y renderizado mediante lazy loading y técnicas de <strong>code splitting</strong>.
+        Soporte a procesos de QA y análisis de bugs en producción usando herramientas como <strong>DevTools</strong> y <strong>Postman</strong>.
+        Participación en el diseño arquitectónico para futura migración hacia un entorno <strong>fullstack con Node.js</strong>.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Desarrollador Fullstack – Ceser S.A.S.</h4>
+      <span>Junio 2023 — Presente</span>
+      <p class="timeline-text">
+        Diseño, desarrollo y despliegue de aplicaciones web internas utilizando <strong>HTML, CSS, JavaScript y PHP</strong>.
+        Implementación completa de funcionalidades desde el frontend hasta el backend, incluyendo validaciones, autenticación y conexión a bases de datos <strong>MySQL</strong>.
+        Integración de sistemas externos mediante <strong>APIs REST</strong> (envío de formularios, gestión de inventario), utilizando <strong>fetch</strong> y <strong>manejo de tokens </strong>.
+        Automatización de procesos administrativos, logrando una <strong>reducción del esfuerzo manual del 40%</strong> mediante scripts personalizados.
+        Mejora de la experiencia de usuario (UX) con formularios dinámicos, validación en tiempo real y visual.
+      </p>
+    </li>
+
+  </ol>
+
 </section>
 
+        
 
-    <!-- About Me -->
-    <section id="about" class="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h3>.../About me...</h3>
-                <p>Hola, soy <strong>Sebastián F. Baracaldo</strong>, un <em>Jr FrontEnd Developer en desarrollo</em>.</p>
-                <p>Más de <strong>2 años </strong> de experiencia en desarrollo web y soporte IT.</p>
-            </div>
-            <div class="profile-pic">
-                <img src="IMG_8219.jpeg" alt="Profile Picture">
-            </div>
-        </div>
+        <section class="skill">
 
-        <!-- Skills Section -->
-        <div class="skills">
-            <h3>Technical Skills</h3>
-            <div class="skill-item">
-                <span>CSS</span> <div class="skill-bar"><div class="level" style="width: 80%;"></div></div>
-            </div>
-            <div class="skill-item">
-                <span>JavaScript</span> <div class="skill-bar"><div class="level" style="width: 85%;"></div></div>
-            </div>
-            <div class="skill-item">
-                <span>PHP</span> <div class="skill-bar"><div class="level" style="width: 70%;"></div></div>
-            </div>
-            <div class="skill-item">
-                <span>HTML</span> <div class="skill-bar"><div class="level" style="width: 80%;"></div></div>
-            </div>
-            <div class="skill-item">
-                <span>REACT.JS</span> <div class="skill-bar"><div class="level" style="width: 50%;"></div></div>
-            </div>
-        </div>
-    </section>
+          <h3 class="h3 skills-title">Habilidades Técnicas</h3>
+        
+          <ul class="skills-list content-card">
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">HTML / CSS</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">React.js</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">PHP</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li><li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Node.Js</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+            
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Integración de APIs (REST, JSON)</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Control de versiones (Git, GitHub)</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+        
 
-    <!-- Work Experience -->
-    <section id="work" class="work">
-        <h2>Work Experience</h2>
-        <div class="work-timeline">
-            <div class="job">
-                <h4>Frontend Developer | Fast International Cargo</h4>
-                <span>2023 - Present</span>
-                <p>Desarrollo y mantenimiento de aplicaciones web con HTML, CSS y JavaScript.</p>
-            </div>
-            <div class="job active">
-                <h4>Fullstack Developer | Ceser S.A.S.</h4>
-                <span>2023 - Present</span>
-                <p>Desarrollo backend con PHP y MySQL, diseño frontend con HTML, CSS y JavaScript.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <img src="Screenshot 2025-03-12 at 5.17.53 PM.png" alt="Project Screenshot">
-            <h4>Portafolio Especialista en Marketing</h4>
-            <p>Portafolio para una especialista en Marketing, en Ingles y español.</p>
-            <div class="project-buttons">
-                <a href="https://portafolio-profesional-camila-ibanez.netlify.app/" class="btn-primary">Proyecto</a>
-                <a href="https://github.com/FelipeBaracaldo1118/Cami-Portfolio" class="btn-secondary">GitHub</a>
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Habilidades Blandas</h3>
+        
+          <ul class="soft-skills-list">
+        
+            <li class="soft-skill-card">
+             
+              <div>
+                <h5 class="h5">Trabajo en equipo</h5>
+                <p>Colaboro de manera efectiva con equipos multidisciplinarios para lograr objetivos comunes.</p>
+              </div>
+            </li>
+        
+            <li class="soft-skill-card">
+             
+              <div>
+                <h5 class="h5">Pensamiento crítico</h5>
+                <p>Analizo problemas de forma estructurada y propongo soluciones viables.</p>
+              </div>
+            </li>
+        
+            <li class="soft-skill-card">
+              
+              <div>
+                <h5 class="h5">Adaptabilidad</h5>
+                <p>Me adapto rápidamente a nuevas tecnologías, entornos y cambios de proyecto.</p>
+              </div>
+            </li>
+        
+            <li class="soft-skill-card">
+             
+              <div>
+                <h5 class="h5">Comunicación</h5>
+                <p>Transmito ideas técnicas de forma clara, tanto a perfiles técnicos como no técnicos.</p>
+              </div>
+            </li>
+        
+            <li class="soft-skill-card">
+              
+              <div>
+                <h5 class="h5">Aprendizaje continuo</h5>
+                <p>Estoy en constante formación y evolución para mantenerme actualizado.</p>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li> 
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Seleccione la categoria</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+          
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://portafolio-profesional-camila-ibanez.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Screenshot 2025-04-02 at 3.34.09 PM.png" alt="Marketing personal" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Portafolio Personal Profesional de Marketing</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://dashboardapexbuy.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Screenshot 2025-04-02 at 3.55.45 PM.png" alt="FastCargo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FastCargo</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://dashboardapexbuy.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Screenshot 2025-04-02 at 3.38.30 PM.png" alt="apexbuy" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ApexBuy</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://proyecto-smartbuyer.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Screenshot 2025-04-02 at 3.35.12 PM.png" alt="Smart Buyer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Smart Buyer</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+            
+
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulario de Contacto</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Tu Nombre" required>
-            <input type="email" name="email" placeholder="Tu Email" required>
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit" class="btn-primary">Enviar</button>
-        </form>
-    </section>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar Mensaje</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
